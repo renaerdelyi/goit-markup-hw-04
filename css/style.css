@@ -70,6 +70,12 @@ body {
   color: var(--blue);
 }
 
+.header-section__nav ul {
+  display: flex;
+  gap: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .nav-link {
   font-size: 14px;
   font-weight: 500;
@@ -77,12 +83,7 @@ body {
   line-height: 16.41px;
   text-decoration: none;
 }
-.header-section__nav ul {
-  display: flex;
-  gap: 50px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--blue);
@@ -94,8 +95,6 @@ body {
   padding-right: 40px;
 }
 .icon__mail {
-  display: flex;
-  justify-content: flex-end;
   width: 16px;
   height: 12px;
 }
@@ -156,18 +155,12 @@ body {
   display: flex;
   gap: 30px;
 }
-
 .about-section__icon {
-  width: 70px;
-  height: 70px;
+  width: 270px;
+  height: 120px;
   background-color: #f5f4fa;
-
-  top: 774px;
-  left: 215px;
-  gap: 0px;
-  border-radius: 4px 0px 0px 0px;
-  opacity: 0px;
 }
+
 .about-section__title {
   font-weight: 700;
   font-size: 14px;
@@ -226,9 +219,10 @@ body {
   gap: 30px;
   justify-content: center;
 }
-.our-team_members {
-  box-shadow: 0px 2px 1px 0px, rgba(0, 0, 0, 0.2), 0px 1px 1px 0px,
-    rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+.our-team__card {
+  background-color: var(--white);
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
 }
 .our-team__img {
   width: 270px;
@@ -295,6 +289,8 @@ body {
 .cards-btn__item:focus {
   background-color: var(--blue);
   color: var(--white);
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
 }
 
 .cards__images {
@@ -303,9 +299,10 @@ body {
   gap: 30px;
   border-bottom: 1px solid #eeeeee;
 }
-.cards_image {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+.cards__image:hover {
+  background-color: var(--white);
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+    0px 1px 1px 0px #0000001f;
 }
 .cards__title {
   font-weight: 700;
@@ -387,8 +384,15 @@ body {
   color: var(--blue);
   text-decoration: underline;
 }
-.footer-section__subtitle {
+.footer-section__1 {
   display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.footer-section__2 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 .footer-section__social {
   display: flex;
@@ -400,7 +404,7 @@ body {
   height: 20px;
 }
 .footer-section__icons:hover {
-  fill: var(--blue);
+  stroke: var(--blue);
 }
 .container {
   width: 1200px;
