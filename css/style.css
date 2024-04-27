@@ -94,9 +94,22 @@ body {
   padding-left: 385px;
   padding-right: 40px;
 }
-.icon__mail {
+
+.header-section__icon-mail {
   width: 16px;
   height: 12px;
+}
+.header-section__icon-tel {
+  width: 10px;
+  height: 16px;
+}
+.header-section__icon-mail:hover,
+.header-section__icon-mail:focus {
+  fill: var(--blue);
+}
+.header-section__icon-tel:hover,
+.header-section__icon-tel:focus {
+  fill: var(--blue);
 }
 .header-section__tel {
   color: var(--grey);
@@ -155,9 +168,16 @@ body {
   display: flex;
   gap: 30px;
 }
+.about-section__icon-bg {
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  padding: 25px 100px;
+  border-radius: 4px;
+}
 .about-section__icon {
-  width: 270px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   background-color: #f5f4fa;
 }
 
@@ -167,6 +187,7 @@ body {
   line-height: 16.41px;
   color: var(--black);
   padding-bottom: 10px;
+  padding-top: 30px;
 }
 .about-section__text {
   font-size: 14px;
@@ -247,18 +268,28 @@ body {
 .our-team__social {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
   gap: 10px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.our-team__social li {
+  background-color: var(--white);
+  padding: 12px;
+  border-radius: 100%;
 }
 .our-team__icons {
   width: 20px;
   height: 20px;
-  color: var(--grey);
+  fill: #afb1b8;
 }
-.our-team__icons:hover {
+
+.our-team__social :hover,
+.our-team__social :focus {
   fill: var(--white);
   background-color: var(--blue);
 }
+
 /*stilizare pentru cards section*/
 .cards-section .container {
   padding-top: 94px;
@@ -337,13 +368,25 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+
+  margin-bottom: 94px;
 }
 .regular__icon {
-  width: 41px;
-  height: 46.7px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  background-color: var(white);
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  fill: var(--grey);
+  width: 106px;
+  height: 60px;
 }
-.regular__icon:hover {
+.regular__icons :hover,
+.regular__icons :focus {
   fill: var(--blue);
+  border-color: var(--blue);
 }
 /*stilizare pentru footer section*/
 .footer-section {
@@ -356,7 +399,6 @@ body {
 .footer-section .container {
   list-style: none;
   display: flex;
-  flex-direction: column;
   padding-bottom: 60px;
 }
 .logo-footer {
@@ -384,27 +426,40 @@ body {
   color: var(--blue);
   text-decoration: underline;
 }
-.footer-section__1 {
+.footer-section__subtitle {
   display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-.footer-section__2 {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
+  padding-top: 75px;
+
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
 }
 .footer-section__social {
   display: flex;
   gap: 12px;
   padding-top: 32px;
 }
+
+.footer-section__social li {
+  padding: 12px;
+  background-color: var(--grey);
+  border-radius: 100%;
+}
+.footer-section__2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+}
 .footer-section__icons {
   width: 20px;
   height: 20px;
+  fill: var(--white);
 }
-.footer-section__icons:hover {
-  stroke: var(--blue);
+
+.footer-section__social li:hover,
+.footer-section__social li:focus {
+  background-color: var(--blue);
 }
 .container {
   width: 1200px;
